@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.nav-link {
+    font-weight: 400 !important;
+    color: black !important;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    border-radius: 25%;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    bottom: 5px;
+    transition: all linear 0.5s;
+}
+
+.nav-link:hover.nav-link::after {
+    width: 80%;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.count-cart {
+    position: absolute;
+    padding: 1px 5px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    right: 5px;
+}
+
+.active-nav {
+    color: #ff7f00 !important;
+}
+
+.active-nav.nav-link::after {
+    width: 80%;
+}
+
+.slider-item{
+    height: calc(100vh - 93.5px);
+    width: 100%;
+}
+
+.slider-item.one{
+    background: radial-gradient(#ffbb00e1,#ffff) !important;
+}
+
+.slider-item.two{
+    background: radial-gradient(#09ff00e1,#ffff) !important;
+}
+
+.slider-item.three{
+    background: radial-gradient(#00fff2e1,#ffff);
+}
+
+.slider-item.four{
+    background: radial-gradient(#ff0000e1,#ffff);
+}
