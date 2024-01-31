@@ -51,6 +51,14 @@ body {
 .slider-item{
     height: calc(100vh - 93.5px);
     width: 100%;
+    display: grid;
+    align-content: center;
+}
+
+.slider-item h2{
+    font-size: 10vmin;
+    color: black;
+    font-weight: bolder;
 }
 
 .slider-item.one{
