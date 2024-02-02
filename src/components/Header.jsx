@@ -25,8 +25,8 @@ const Header = () => {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
-                <li className="nav-item">
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-3  text-center">
+                <li className="nav-item ">
                   <a className="nav-link active-nav" aria-current="page" href="#">
                     ALL PRODUCTS
                   </a>
@@ -52,11 +52,11 @@ const Header = () => {
                   </a>
                 </li>
               </ul>
-              <div className="right-head">
-              <i class="ri-search-line mx-3 fs-5"></i>
-              <i class="ri-user-3-line mx-3 fs-5"></i>
+              <div className="right-head text-center">
+              <i className="ri-search-line mx-3 fs-5"></i>
+              <i className="ri-user-3-line mx-3 fs-5"></i>
               <div className="cart-icon">
-                <i class="ri-shopping-cart-2-line mx-3 fs-5"></i>
+                <i className="ri-shopping-cart-2-line mx-3 fs-5"></i>
                 <span className="count-cart">1</span>
               </div>
             </div>

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .nav-link {
@@ -32,7 +32,7 @@ body {
 
 .count-cart {
     position: absolute;
-    padding: 1px 5px;
+    padding: 1px 7px;
     background-color: black;
     color: white;
     font-size: 10px;
@@ -49,14 +49,19 @@ body {
 }
 
 .slider-item{
-    height: calc(100vh - 93.5px);
+    min-height: 500px;
     width: 100%;
     display: grid;
     align-content: center;
 }
 
+.slider-item img{
+    height: 300px;
+    object-fit: contain;
+}
+
 .slider-item h2{
-    font-size: 10vmin;
+    font-size: 8vmin;
     color: black;
     font-weight: bolder;
 }
@@ -75,4 +80,45 @@ body {
 
 .slider-item.four{
     background: radial-gradient(#ff0000e1,#ffff);
+}
+
+.category-box{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.category-box img{
+    height: 200px;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
+    transition: all linear 0.3s;
+}
+
+.category-box:hover.category-box img{
+    scale: 1.2;
+    filter: blur(0.5px);
+}
+
+.category-box:hover.category-box h4{
+    box-shadow: 0 0 20px white;
+}
+
+
+.category-box h4{
+    font-size: 15px;
+    color: white;
+    background-color: #212529;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-wrap: nowrap;
+    z-index: 1;
+    transition: all linear 0.3s;
 }

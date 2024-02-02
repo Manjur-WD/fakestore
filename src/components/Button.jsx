@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
   return (
     <>
-      
+      <button className={props.btnClass}>{props.btnText}</button>
+      {
+        console.log(props)
+      }
     </>
   )
 }

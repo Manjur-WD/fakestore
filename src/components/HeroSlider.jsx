@@ -52,10 +52,10 @@ const HeroSlider = () => {
                         Welcome to the epitome of men's fashion. Dive into a
                         world where style meets substance...
                       </p>
-                      <a href="men.html">Explore Men's Collection</a>
+                      <a href="men.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Men's Collection</a>
                     </div>
                     <div className="col-md-6 p-3">
-                      <img src={mensBanner} alt="" className="img-fluid" />
+                      <img src={mensBanner} alt="mens banner image" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -71,10 +71,10 @@ const HeroSlider = () => {
                         Indulge in the essence of femininity with our Women's
                         Fashion collection. Unleash your inner fashionista...
                       </p>
-                      <a href="women.html">Discover Women's Fashion</a>
+                      <a href="women.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Discover Women's Fashion</a>
                     </div>
                     <div className="col-md-6 p-3">
-                      <img src={womenBanner} alt="" className="img-fluid" />
+                      <img src={womenBanner} alt="womens banner image" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -91,10 +91,10 @@ const HeroSlider = () => {
                         functionality. Explore a world of cutting-edge
                         technology...
                       </p>
-                      <a href="electronics.html">Explore Electronics</a>
+                      <a href="electronics.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Electronics</a>
                     </div>
                     <div className="col-md-6 p-3">
-                      <img src={mensBanner} alt="" className="img-fluid" />
+                      <img src={electronicsBanner} alt="electronics banner image" className="img-fluid" />
                     </div>
                   </div>
                 </div>
@@ -105,15 +105,15 @@ const HeroSlider = () => {
                 <div className="container">
                   <div className="row align-items-center">
                     <div className="col-md-6 p-3">
-                      <h2>Jewellery Extravaganza</h2>
+                      <h2>Top Jewellery</h2>
                       <p className="lead">
                         Embark on a journey through our Jewelry Extravaganza – a
                         realm of timeless elegance and modern sophistication...
                       </p>
-                      <a href="jewellery.html">Discover Jewellery</a>
+                      <a href="jewellery.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Discover Jewellery</a>
                     </div>
                     <div className="col-md-6 p-3">
-                      <img src={jewelleryBanner} alt="" className="img-fluid" />
+                      <img src={jewelleryBanner} alt="jewellery banners image" className="img-fluid" />
                     </div>
                   </div>
                 </div>
