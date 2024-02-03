@@ -44,9 +44,9 @@ const ElectronicsCarousel = () => {
             <a href="">SHOW ALL</a>
           </div>
           <div className="row mt-3">
-            {elecProduct.map((items, index) => {
+            {elecProduct.map((items) => {
               return (
-                <div className="col-lg-3 col-6 mb-2" key={index}>
+                <div className="col-lg-3 col-6 mb-2" key={items.id}>
                   <Pcard
                     image={items.image}
                     price={items.price} 

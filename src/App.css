@@ -163,16 +163,47 @@ body {
     -webkit-line-clamp: 1;
 }
 
-@media(max-width: 768px){
-    .price-title{
-        -webkit-line-clamp: 2;
-    }
+
+
+.title-price-ratings{
+    margin-bottom: 5px;
+}
+
+.category-carousel h2{
+    font-size: 30px;
+}
+
+.category-carousel a{
+    text-wrap: nowrap;
 }
 
 .price{
     color: #000000;
 }
 
+.price h4{
+    font-size: 22px;
+    margin: 0;
+}
+
 .price-rating p{
     text-wrap: nowrap;
+}
+figure{
+    margin: 0 !important;
+}
+
+@media(max-width: 768px){
+    .price-title{
+        -webkit-line-clamp: 2;
+    }
+    /* .title-price-ratings{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 !important;
+    } */
+    .price h4{
+        font-size: 15px;
+    }
 }

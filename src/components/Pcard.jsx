@@ -20,7 +20,7 @@ const Pcard = (props) => {
                     <img src={props.image} alt="product-image" className='img-fluid' />
                 </div>
                 <p className='price-title text-center'>{props.title}</p>
-                <div className="title-price-ratings d-flex justify-content-between gap-3">
+                <div className="title-price-ratings d-flex align-items-center justify-content-between gap-3">
                     <div className="price">
                         <h4>${props.price}</h4>
                     </div>

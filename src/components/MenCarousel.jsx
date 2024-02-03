@@ -44,16 +44,16 @@ const MenCarousel = () => {
             <a href="">SHOW ALL</a>
           </div>
           <div className="row mt-3">
-            {mensProduct.map((items, index) => {
+            {mensProduct.map((items) => {
               return (
-                <div className="col-lg-3 col-6 mb-2" key={index}>
+                <div className="col-lg-3 col-6 mb-2" key={items.id}>
                   <Pcard
                     image={items.image}
                     price={items.price} 
                     title={items.title}
                     rate={items.rating.rate}
                     count={items.rating.count}
-                     />
+                  />
                 </div>
               );
             })}

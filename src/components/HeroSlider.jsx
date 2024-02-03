@@ -50,7 +50,7 @@ const HeroSlider = () => {
                       <h2>Men's Collection</h2>
                       <p className="lead">
                         Welcome to the epitome of men's fashion. Dive into a
-                        world where style meets substance...
+                        world where style meets substance. Unleash your inner fashionista...
                       </p>
                       <a href="men.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Men's Collection</a>
                     </div>
@@ -71,7 +71,7 @@ const HeroSlider = () => {
                         Indulge in the essence of femininity with our Women's
                         Fashion collection. Unleash your inner fashionista...
                       </p>
-                      <a href="women.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Discover Women's Fashion</a>
+                      <a href="women.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Top Women's Fashion</a>
                     </div>
                     <div className="col-md-6 p-3">
                       <img src={womenBanner} alt="womens banner image" className="img-fluid" />
