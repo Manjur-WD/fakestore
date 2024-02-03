@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/QuickMART logo.png";
+import { Link,NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
       <header className="bg-white sticky-top">
         <nav className="navbar navbar-expand-lg container">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/">
               <img src={logo} alt="brand-logo" width={150} />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -27,29 +28,29 @@ const Header = () => {
             >
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-3  text-center">
                 <li className="nav-item ">
-                  <a className="nav-link active-nav" aria-current="page" href="#">
-                    ALL PRODUCTS
-                  </a>
+                  <NavLink className="nav-link active-nav" aria-current="page" to="/">
+                    HOME
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <NavLink className="nav-link" aria-current="page" to="/category/men's clothing">
                     MENS
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <NavLink className="nav-link" aria-current="page" to="/category/women's clothing">
                     WOMENS
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <NavLink className="nav-link" aria-current="page" to="/category/electronics">
                     ELECTRONICS
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">
+                  <NavLink className="nav-link" aria-current="page" to="/category/jewelery">
                     JEWELLERY
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
               <div className="right-head text-center">

@@ -3,17 +3,13 @@ import "./App.css";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import CategoryWiseProduct from "./pages/CategoryWiseProduct";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route

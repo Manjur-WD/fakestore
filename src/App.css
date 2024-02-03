@@ -15,13 +15,17 @@ body {
     background: black;
     display: inline-block;
     position: absolute;
-    left: 5%;    
+    left: 10%;    
     bottom: 5px;
     border-radius: 30px;
     transition: all linear 0.5s;
 }
 
 .nav-link:hover.nav-link::after {
+    width: 80%;
+}
+
+.active.nav-link::after {
     width: 80%;
 }
 
@@ -40,13 +44,10 @@ body {
     right: 5px;
 }
 
-.active-nav {
+.active {   
     color: #ff7f00 !important;
 }
 
-.active-nav.nav-link::after {
-    width: 80%;
-}
 
 .slider-item {
     min-height: 500px;
