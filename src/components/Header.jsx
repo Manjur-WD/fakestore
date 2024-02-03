@@ -4,7 +4,7 @@ import logo from "../assets/images/QuickMART logo.png";
 const Header = () => {
   return (
     <>
-      <header className="bg-white">
+      <header className="bg-white sticky-top">
         <nav className="navbar navbar-expand-lg container">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
