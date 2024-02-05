@@ -4,6 +4,8 @@ import womenBanner from "../assets/images/women.png";
 import electronicsBanner from "../assets/images/electronics.png";
 import jewelleryBanner from "../assets/images/jewellery.png";
 
+import { Link } from "react-router-dom";
+
 const HeroSlider = () => {
   return (
     <>
@@ -48,11 +50,11 @@ const HeroSlider = () => {
                   <div className="row align-items-center">
                     <div className="col-md-6 p-3">
                       <h2>Men's Collection</h2>
-                      <p className="lead">
+                      <p className="lead text-dark">
                         Welcome to the epitome of men's fashion. Dive into a
                         world where style meets substance. Unleash your inner fashionista...
                       </p>
-                      <a href="men.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Men's Collection</a>
+                      <Link to="/category/men's clothing" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Men's Collection</Link>
                     </div>
                     <div className="col-md-6 p-3">
                       <img src={mensBanner} alt="mens banner image" className="img-fluid" />
@@ -67,11 +69,11 @@ const HeroSlider = () => {
                   <div className="row align-items-center">
                     <div className="col-md-6 p-3">
                       <h2>Women's Fashion</h2>
-                      <p className="lead">
+                      <p className="lead text-dark">
                         Indulge in the essence of femininity with our Women's
                         Fashion collection. Unleash your inner fashionista...
                       </p>
-                      <a href="women.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Top Women's Fashion</a>
+                      <Link to="/category/women's clothing" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Top Women's Fashion</Link>
                     </div>
                     <div className="col-md-6 p-3">
                       <img src={womenBanner} alt="womens banner image" className="img-fluid" />
@@ -86,12 +88,12 @@ const HeroSlider = () => {
                   <div className="row align-items-center">
                     <div className="col-md-6 p-3">
                       <h2>Electronics Hub</h2>
-                      <p className="lead">
+                      <p className="lead text-dark">
                         Welcome to the Electronics Hub, where innovation meets
                         functionality. Explore a world of cutting-edge
                         technology...
                       </p>
-                      <a href="electronics.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Electronics</a>
+                      <Link to="/category/electronics" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Explore Electronics</Link>
                     </div>
                     <div className="col-md-6 p-3">
                       <img src={electronicsBanner} alt="electronics banner image" className="img-fluid" />
@@ -106,11 +108,11 @@ const HeroSlider = () => {
                   <div className="row align-items-center">
                     <div className="col-md-6 p-3">
                       <h2>Top Jewellery</h2>
-                      <p className="lead">
+                      <p className="lead text-dark">
                         Embark on a journey through our Jewelry Extravaganza – a
                         realm of timeless elegance and modern sophistication...
                       </p>
-                      <a href="jewellery.html" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Discover Jewellery</a>
+                      <Link to="/category/jewelery" className="btn btn-dark rounded-0 px-5 py-2 fs-5">Discover Jewellery</Link>
                     </div>
                     <div className="col-md-6 p-3">
                       <img src={jewelleryBanner} alt="jewellery banners image" className="img-fluid" />

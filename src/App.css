@@ -15,7 +15,7 @@ body {
     background: black;
     display: inline-block;
     position: absolute;
-    left: 10%;    
+    left: 10%;
     bottom: 5px;
     border-radius: 30px;
     transition: all linear 0.5s;
@@ -44,7 +44,7 @@ body {
     right: 5px;
 }
 
-.active {   
+.active {
     color: #ff7f00 !important;
 }
 
@@ -151,13 +151,60 @@ body {
     color: black;
 }
 
-.product-card img {
-    height: 150px;
-    object-position: center;
-    object-fit: contain;
+.product-card{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
 }
 
-.price-title{
+.action-btn-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: #ffffffee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-on-product{
+    width: 100%;
+    position: relative;
+    left: -100%;
+    padding: 5px;
+}
+
+.action-on-product i{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow:  0 0 10px black;
+}
+
+.product-card:hover .action-btn-container{
+    z-index: 99;
+    transition: 0.5s;
+}
+
+.product-card:hover .action-on-product{
+    left: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.product-card img {
+    height: 300px;
+    padding: 10px;
+    object-position: center;
+    object-fit: contain;
+
+}
+
+.price-title {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -166,45 +213,129 @@ body {
 
 
 
-.title-price-ratings{
+.title-price-ratings {
     margin-bottom: 5px;
 }
 
-.category-carousel h2{
+.category-carousel h2 {
     font-size: 30px;
 }
 
-.category-carousel a{
+.category-carousel a {
     text-wrap: nowrap;
 }
 
-.price{
+.price {
     color: #000000;
 }
 
-.price h4{
+.price h4 {
     font-size: 22px;
     margin: 0;
 }
 
-.price-rating p{
+.price-rating p {
     text-wrap: nowrap;
 }
-figure{
+
+figure {
     margin: 0 !important;
 }
 
-@media(max-width: 768px){
-    .price-title{
+footer h5 span {
+    color: #ff7f00;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+footer ul li a:hover {
+    color: #ff7f00;
+}
+
+footer ul li a:active {
+    color: #ff7f00;
+}
+
+form button[type="submit"] {
+    background-color: #ff7f00;
+    color: white;
+}
+
+form button[type="submit"]:active {
+    background-color: gray;
+}
+
+footer .social-icons i {
+    background-color: white;
+    padding: 2px 6px;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid #ff7f00;
+    box-shadow: 0 0 5px white;
+}
+
+.copyright {
+    background-color: rgb(207, 212, 218);
+    padding: 10px;
+}
+
+.copyright span {
+    color: #ff7f00;
+}
+
+.bread-crumb {
+    height: 300px;
+}
+
+.bread-crumb h1{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    color: #ff7f00;
+    text-shadow:  0 0 15px black;
+}
+
+.bread-crumb a {
+    text-decoration: none;
+    color: white;
+}
+
+.bread-crumb a:hover,
+.bread-crumb a:active {
+    color: #ff7f00;
+}
+
+
+
+@media(max-width: 768px) {
+    .price-title {
         -webkit-line-clamp: 2;
     }
+
     /* .title-price-ratings{
         flex-direction: column;
         justify-content: center;
         text-align: center;
         margin: 0 !important;
     } */
-    .price h4{
+    .price h4 {
         font-size: 15px;
+    }
+
+    .product-card img{
+        height: 150px;
+    }
+
+    .action-on-product{
+        gap: 20px !important;
     }
 }

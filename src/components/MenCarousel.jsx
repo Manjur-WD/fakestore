@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Pcard from "./Pcard";
+import { Link } from "react-router-dom";
 
 const MenCarousel = () => {
   const [mensProduct, setmensProducts] = useState([]);
@@ -29,7 +30,7 @@ const MenCarousel = () => {
   }, []);
 
   const getMansData = () => {
-    const apiURL = "https://fakestoreapi.com/products/category/men's%20clothing";
+    const apiURL = "https://fakestoreapi.com/products/category/men's%20clothing?limit=3";
     fetch(apiURL)
       .then(response => response.json())
       .then(data => setmensProducts(data))
@@ -41,12 +42,12 @@ const MenCarousel = () => {
         <div className="container">
           <div className="category-carousel">
             <h2 className="fw-bold">Top <span>Mens</span> Collections</h2>
-            <a href="">SHOW ALL</a>
+            <Link to="/category/men's clothing">SHOW ALL</Link>
           </div>
           <div className="row mt-3">
             {mensProduct.map((items) => {
               return (
-                <div className="col-lg-3 col-6 mb-2" key={items.id}>
+                <div className="col-lg-4 col-6 mb-2" key={items.id}>
                   <Pcard
                     image={items.image}
                     price={items.price} 
