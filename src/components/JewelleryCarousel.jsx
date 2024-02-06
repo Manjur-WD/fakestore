@@ -54,6 +54,7 @@ const JewelleryCarousel = () => {
                     title={items.title}
                     rate={items.rating.rate}
                     count={items.rating.count}
+                    keys={items.id}
                      />
                 </div>
               );

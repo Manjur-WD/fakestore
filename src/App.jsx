@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import CategoryWiseProduct from "./pages/CategoryWiseProduct";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductDetails from "./pages/ProductDetails";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             path="/category/:categoryName"
             element={<CategoryWiseProduct />}
           />
+          <Route path="/product/:id" element={<ProductDetails />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

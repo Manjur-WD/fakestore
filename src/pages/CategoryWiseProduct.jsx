@@ -50,13 +50,14 @@ const CategoryWiseProduct = () => {
         <div className="container">
           <div className="row mt-3">
             {products.map((items) => (
-              <div className="col-lg-4 col-6 mb-2" key={items.id}>
+              <div className="col-lg-4 col-6 mb-2" >
                 <Pcard
                   image={items.image}
                   price={items.price}
                   title={items.title}
                   rate={items.rating.rate}
                   count={items.rating.count}
+                  keys={items.id}
                 />
               </div>
             ))}

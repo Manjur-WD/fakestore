@@ -4,17 +4,20 @@ import category1Image from "../assets/images/mens-breadcrumb.jpeg";
 import category2Image from "../assets/images/women-breadcrumb.jpg";
 import category3Image from "../assets/images/electronics-breadcrumb.jpg";
 import category4Image from "../assets/images/jewelery-bread-crumb.webp";
+import category5Image from "../assets/images/eCommerce.jpg";
+
 
 const BreadCrumb = (props) => {
   const getImgUrl = () => {
     if (props.title == "men's clothing") return category1Image;
     else if (props.title == "women's clothing") return category2Image;
     else if (props.title == "electronics") return category3Image;
+    else if (props.title == "Product Details") return category5Image;
     else return category4Image;
   };
 
   let imgUrl = getImgUrl();
-  console.log(imgUrl);
+
 
   return (
     <>

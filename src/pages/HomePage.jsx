@@ -11,7 +11,6 @@ const HomePage = () => {
   useEffect(()=>{
     const navbarToggler = document.querySelector(".navbar-collapse");
     navbarToggler.classList.remove("show");
-    console.log(navbarToggler);
   },[])
 
   return (

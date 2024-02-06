@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Pcard = (props) => {
   let starArray = [];
@@ -9,7 +10,7 @@ const Pcard = (props) => {
       starArray.push(<i className="ri-star-half-s-line text-warning"></i>);
     }
   }
-  console.log(starArray);
+
   return (
     <>
       <div className="product-card border px-3">
@@ -35,7 +36,7 @@ const Pcard = (props) => {
               <i className="ri-shopping-cart-fill" data-toggle="tooltip" data-placement="bottom" title="Add to cart"></i>
             </div>
             <div className="view-product-btn">
-              <i className="ri-eye-fill" data-toggle="tooltip" data-placement="bottom" title="View product"></i>
+              <Link to={`/product/${props.keys}`}><i className="ri-eye-fill" data-toggle="tooltip" data-placement="bottom" title="View product"></i></Link>
             </div>
           </div>
         </div>
