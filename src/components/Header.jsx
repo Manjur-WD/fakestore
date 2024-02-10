@@ -57,9 +57,9 @@ const Header = () => {
               <i className="ri-search-line mx-3 fs-5"></i>
               <i className="ri-user-3-line mx-3 fs-5"></i>
               <div className="cart-icon">
-                <i className="ri-shopping-cart-2-line mx-3 fs-5"></i>
-                <span className="count-cart">1</span>
-              </div>
+                <Link to="/cart" className="text-decoration-none text-dark"><i className="ri-shopping-cart-2-line mx-3 fs-5"></i>
+                <span className="count-cart">0</span></Link>
+              </div>  
             </div>
             </div>
             

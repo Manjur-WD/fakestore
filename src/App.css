@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
-header{
+header {
     border-bottom: 1px solid #000000;
 }
 
@@ -155,14 +155,14 @@ header{
     color: black;
 }
 
-.product-card{
+.product-card {
     cursor: pointer;
     position: relative;
     overflow: hidden;
     background-color: white;
 }
 
-.action-btn-container{
+.action-btn-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -175,31 +175,31 @@ header{
     align-items: center;
 }
 
-.action-on-product{
+.action-on-product {
     width: 100%;
     position: relative;
     left: -100%;
     padding: 5px;
 }
 
-.action-on-product a{
+.action-on-product a {
     text-decoration: none;
 }
 
-.action-on-product i{
+.action-on-product i {
     color: white;
     background-color: black;
     padding: 10px;
     border-radius: 50%;
-    box-shadow:  0 0 10px black;
+    box-shadow: 0 0 10px black;
 }
 
-.product-card:hover .action-btn-container{
+.product-card:hover .action-btn-container {
     z-index: 99;
     transition: 0.5s;
 }
 
-.product-card:hover .action-on-product{
+.product-card:hover .action-on-product {
     left: 0;
     transition: ease-in-out 0.5s;
 }
@@ -212,13 +212,13 @@ header{
 
 }
 
-.product-details img{
+.product-details img {
     height: 500px;
     object-fit: contain;
     object-position: center;
 }
 
-.product-details h2{
+.product-details h2 {
     color: #ff7f00;
 }
 
@@ -314,12 +314,12 @@ footer .social-icons i {
     height: 300px;
 }
 
-.bread-crumb h1{
+.bread-crumb h1 {
     color: white;
     border: 1px solid white;
     padding: 10px;
     color: #ff7f00;
-    text-shadow:  0 0 15px black;
+    text-shadow: 0 0 15px black;
 }
 
 .bread-crumb a {
@@ -332,7 +332,7 @@ footer .social-icons i {
     color: #ff7f00;
 }
 
-.product-action-btn button:first-child{
+.product-action-btn button:first-child {
     background-color: #ff7f00;
     border-radius: 30px;
     padding: 10px 20px !important;
@@ -340,7 +340,7 @@ footer .social-icons i {
     margin-right: 10px;
 }
 
-.product-action-btn button:last-child{
+.product-action-btn button:last-child {
     background-color: #000000;
     border-radius: 30px;
     padding: 10px 20px !important;
@@ -349,8 +349,53 @@ footer .social-icons i {
 }
 
 .product-action-btn button:first-child:active,
-.product-action-btn button:last-child:active{
+.product-action-btn button:last-child:active {
     background-color: gray;
+}
+
+.left-cart-section h1 {
+    color: #ff7f00;
+}
+
+.cart-product table tr th {
+    color: rgb(165, 162, 162);
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cart-product table tr td {
+    text-align: center;
+}
+
+.up,
+.down {
+    font-size: 22px;
+    cursor: pointer;
+    color: #ff7f00;
+}
+
+.cart-product-detail figure{
+    cursor: pointer;
+}
+
+.checkout{
+    color: white !important;
+    background-color: #000000 !important;
+}
+
+.checkout:active{
+    background-color: gray !important;
+}
+
+.promo-code button{
+    color: white !important;
+    background-color: #ff7f00;
+    margin-top: 10px;
+}
+
+.promo-code button:hover {
+    background-color: black;
 }
 
 
@@ -370,19 +415,19 @@ footer .social-icons i {
         font-size: 15px;
     }
 
-    .product-card img{
+    .product-card img {
         height: 150px;
     }
 
-    .action-on-product{
+    .action-on-product {
         gap: 20px !important;
     }
 
-    .product-details img{
+    .product-details img {
         height: 300px;
     }
 
-    .product-action-btn button{
+    .product-action-btn button {
         font-size: 10px;
     }
 }

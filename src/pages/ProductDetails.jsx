@@ -4,6 +4,7 @@ import BreadCrumb from "../components/BreadCrumb";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([]);
+  const [cart, setCart] = useState([]);
   const { id } = useParams();
   console.log(id);
 
@@ -31,6 +32,10 @@ const ProductDetails = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
+  const handleCart = () =>{
+
+  }
+
   return (
     <>
       <section className="product-details p-5">
@@ -55,7 +60,7 @@ const ProductDetails = () => {
                 <i className="ri-heart-fill"></i>
                   ADD TO WISHLIST
                 </button>
-                <button type="button" className="btn">
+                <button type="button" className="btn" onClick={handleCart}>
                 <i className="ri-shopping-cart-fill"></i>
                   ADD TO CART
                 </button>
