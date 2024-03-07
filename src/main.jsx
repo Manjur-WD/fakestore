@@ -8,6 +8,8 @@ import "../node_modules/jquery/dist/jquery.js"
 import "../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
 import "../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
 import "../node_modules/owl.carousel/dist/owl.carousel.js"
+import "../node_modules/react-loading-skeleton/dist/skeleton.css"
+import "../node_modules/react-multi-carousel/lib/styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
