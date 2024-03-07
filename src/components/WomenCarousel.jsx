@@ -49,10 +49,11 @@ const WomenCarousel = () => {
             </h2>
             <Link to="/category/women's clothing">SHOW ALL</Link>
           </div>
-          <div className="row mt-3">
+          <div className="mt-3">
+            <Carousel responsive={responsive}>
             {womensProduct.map((items) => {
               return (
-                <div className="col-lg-4 col-6 mb-2">
+                <div className="item">
                   <Pcard
                     image={items.image}
                     price={items.price}
@@ -64,6 +65,7 @@ const WomenCarousel = () => {
                 </div>
               );
             })}
+            </Carousel>
           </div>
         </div>
       </section>
